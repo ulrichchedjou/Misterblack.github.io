@@ -1,0 +1,128 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.title h1{
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 80px;
+}
+
+.sport-events {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr;
+  grid-template-rows: 480px 480px 480px;
+  gap: 10px;
+  width: fit-content;
+  object-fit: cover;
+  max-width: 1000px;
+}
+
+.festif-events {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 380px 380px;
+  gap: 10px;
+  width: fit-content;
+  object-fit: cover;
+  max-width: 1000px;
+}
+
+.fun-events{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 380px 380px;
+  gap: 10px;
+  max-width: 1000px;
+  width: fit-content;
+  object-fit: cover;
+}
+
+/*.sport-events img,
+.festif-events img, .fun-events img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}*/
+
+.photo {
+  position: relative;
+  width: 90%;
+  height: 80%;
+}
+
+h2, section h1, h1{
+  color: #FFD700;
+}
+h2{
+  text-align: center;
+}
+
+.title h1{
+  font-size: 3.5em;
+}
+
+section{
+  padding: 80px;
+}
+
+
+@media screen and (max-width: 996px) {
+  .sport-events {
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    object-fit: contain;
+  }
+
+  .fun-events {
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    object-fit: contain;
+  }
+
+  .festif-events{
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .photo {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+  section{
+    padding: 80px;
+    width: 80%;
+  }
+  header{
+    width: auto;
+    object-fit: cover;
+    padding: 5px 5px;
+  }
+  header nav{
+    width: 100%;
+    object-fit: cover;
+    max-width: 1000px;
+    
+  }
+  .festif-title{
+    margin-top: 80px;
+    padding-left: 10px;
+  }
+  body{
+    object-fit: fill;
+    width: fit-content;
+  }
+
+}
